@@ -1,0 +1,16 @@
+<!--custom-tab-bar/index.wxml-->
+<!-- <text>custom-tab-bar/index.wxml</text> -->
+<cover-view class="tab-bar">
+    <cover-view class="tab-item">
+      <cover-image src="../image/icon_API.png"></cover-image>
+      <cover-view>首页</cover-view>
+    </cover-view>
+    <cover-view class="tab-item">
+      <cover-image src="../image/icon_API.png"></cover-image>
+      <cover-view>首页</cover-view>
+    </cover-view>
+    <cover-view class="tab-item">
+      <cover-image src="../image/icon_API.png"></cover-image>
+      <cover-view>首页</cover-view>
+    </cover-view>
+</cover-view>

@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/food/food",
+    "pages/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -9,6 +10,23 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/home/home",
+      "text": "食疗坊"
+    }, {
+      "pagePath": "pages/about/about",
+      "text": "关于"
+    }]
+  },
+  "usingComponents": {},
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

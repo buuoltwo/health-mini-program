@@ -1,0 +1,20 @@
+/* custom-tab-bar/index.wxss */
+.tab-bar {
+  height: 48px;
+  display: flex;
+}
+.tab-item {
+  /* background-color: orange; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tab-item cover-image{
+  width: 27px;
+  height: 27px;
+}
+.tab-item cover-view {
+  font-size: 10px;
+}
