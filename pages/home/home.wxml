@@ -1,2 +1,12 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- <text>pages/home/home.wxml</text> -->
+<view id="home">
+  <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item class="s-item">
+            <image src="/image/icon_API.png"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+</view>

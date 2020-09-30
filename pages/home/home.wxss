@@ -1,1 +1,11 @@
 /* pages/home/home.wxss */
+.s-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+image {
+  object-fit: contain;
+  width: 70px;
+  height: 70px;
+}
