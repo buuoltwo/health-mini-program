@@ -2,7 +2,7 @@
 <!-- <text>pages/home/home.wxml</text> -->
 <view id="home">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
-    circular="true" >
+    circular="true">
     <block wx:for="{{banners}}" wx:key="index">
       <swiper-item class="s-item">
         <image src="{{item.image}}"></image>
@@ -16,4 +16,36 @@
       </swiper-item>
     </block> -->
   </swiper>
+  <view class="middle">
+    <view class="child">
+      <figure>
+        <image src="{{banners[3].image}}"></image>
+        <figcaption>每日一测</figcaption>
+      </figure>
+    </view>
+    <view class="child">
+      <figure>
+        <image src="{{banners[4].image}}"></image>
+        <figcaption>每日食补</figcaption>
+      </figure>
+    </view>
+  </view>
+  <view class="list" wx:for="{{list}}" wx:key="index">
+    <view class="list-title">{{item.title}}</view>
+    <view class="list-image"><image src="{{item.image}}"></image></view>
+    <view class="list-description">{{item.desc}}</view>
+    <view class="list-reading"><text>{{item.readNum}}</text>阅读</view>
+  </view>
+  <!-- <view class="list">
+    <view class="list-title">title</view>
+    <view class="list-image"><image src="/image/icon_API.png"></image></view>
+    <view class="list-description">description</view>
+    <view class="list-reading"><text>2233</text>阅读</view>
+  </view>
+  <view class="list">
+    <view class="list-title">title</view>
+    <view class="list-image"><image src="/image/icon_API.png"></image></view>
+    <view class="list-description">description</view>
+    <view class="list-reading"><text>2233</text>阅读</view>
+  </view> -->
 </view>

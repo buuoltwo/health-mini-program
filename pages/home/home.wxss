@@ -1,14 +1,17 @@
 /* pages/home/home.wxss */
 .s-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 338rpx;
+  width: 100%;
 }
+
 image {
-  object-fit: contain;
+  /* object-fit: contain; */
+  height: 338rpx;
+  width: 100%;
 }
+
 .title {
-  background-color: rgba(0,0,0, .6);
+  background-color: rgba(0, 0, 0, .6);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -21,4 +24,89 @@ image {
 
 .total {
   float: right;
+}
+
+.middle {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.middle image {
+  width: 306rpx;
+  height: 185rpx;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0;
+}
+
+.middle figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.list {
+  display: grid;
+  grid: auto auto auto / 210rpx 1fr;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.096);
+
+  height: 220rpx;
+  font-size: 12px;
+  padding: 0 20rpx;
+}
+
+.list .list-title {
+  grid-area: 1/1/2/3;
+  font-weight: 800;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list .list-image {
+  grid-area: 2/1/4/2;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list image {
+  width: 210rpx;
+  height: 140rpx;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0;
+}
+
+.list .list-description {
+  grid-area: 2/2/3/3;
+  padding-left: 20rpx;
+
+  height: 120rpx;
+  line-height: 40rpx;
+
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+}
+
+.list .list-reading {
+  grid-area: 3/2/4/3;
+  margin-left: auto;
+}
+
+.list text {
+  margin-right: 10rpx;
+  color: orangered;
+}
+
+#home {
+  padding-bottom: 50px;
 }

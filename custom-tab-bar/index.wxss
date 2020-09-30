@@ -2,6 +2,7 @@
 .tab-bar {
   height: 48px;
   display: flex;
+  background-color: #a6ebc5;
 }
 .tab-item {
   /* background-color: orange; */

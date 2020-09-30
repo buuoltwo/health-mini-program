@@ -10,7 +10,9 @@ Page({
     vertical: false,
     autoplay: false,
     interval: 2000,
-    duration: 500
+    duration: 500,
+
+    list: []
   },
 
   /**
@@ -20,10 +22,19 @@ Page({
     wx.request({
       url: 'http://iwenwiki.com:3002/api/banner',
       success: res => {
-        console.log(res)
+        // console.log(res)
         // this.banners = res.data.data
         this.setData({
           banners: res.data.data
+        })
+      }
+    })
+    wx.request({
+      url: 'http://iwenwiki.com:3002/api/indexlist',
+      success: res => {
+        console.log(res.data.data)
+        this.setData({
+          list: res.data.data
         })
       }
     })
