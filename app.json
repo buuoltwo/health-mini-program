@@ -6,8 +6,8 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#83E5AF",
+    "navigationBarTitleText": "安心食疗",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -19,7 +19,7 @@
       "pagePath": "pages/home/home",
       "text": "首页"
     }, {
-      "pagePath": "pages/home/home",
+      "pagePath": "pages/food/food",
       "text": "食疗坊"
     }, {
       "pagePath": "pages/about/about",
