@@ -1,12 +1,19 @@
 <!--pages/home/home.wxml-->
 <!-- <text>pages/home/home.wxml</text> -->
 <view id="home">
-  <swiper indicator-dots="{{indicatorDots}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
-        <block wx:for="{{background}}" wx:key="*this">
-          <swiper-item class="s-item">
-            <image src="/image/icon_API.png"></image>
-          </swiper-item>
-        </block>
-      </swiper>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+    circular="true" >
+    <block wx:for="{{banners}}" wx:key="index">
+      <swiper-item class="s-item">
+        <image src="{{item.image}}"></image>
+        <view class="title">{{item.title}}<text class="total">{{index + 1}} / {{banners.length}}</text></view>
+      </swiper-item>
+    </block>
+    <!-- <block>
+      <swiper-item class="s-item">
+        <image src="/image/icon_API.png"></image>
+        <view  class="title">title</view>
+      </swiper-item>
+    </block> -->
+  </swiper>
 </view>

@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
+    banners:[],
+    indicatorDots: false,
     vertical: false,
     autoplay: false,
     interval: 2000,
@@ -17,7 +17,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.request({
+      url: 'http://iwenwiki.com:3002/api/banner',
+      success: res => {
+        console.log(res)
+        // this.banners = res.data.data
+        this.setData({
+          banners: res.data.data
+        })
+      }
+    })
   },
 
   /**
