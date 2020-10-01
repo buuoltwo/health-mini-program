@@ -1,30 +1,35 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/food/food",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/indexDetail/indexDetail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#83E5AF",
     "navigationBarTitleText": "安心食疗",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "custom": true,
     "color": "#000000",
     "selectedColor": "#000000",
     "backgroundColor": "#000000",
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/food/food",
-      "text": "食疗坊"
-    }, {
-      "pagePath": "pages/about/about",
-      "text": "关于"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/food/food",
+        "text": "食疗坊"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
   },
   "usingComponents": {},
   "style": "v2",

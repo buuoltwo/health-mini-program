@@ -30,7 +30,8 @@
       </figure>
     </view>
   </view>
-  <view class="list" wx:for="{{list}}" wx:key="index">
+  <view class="list" wx:for="{{list}}" wx:key="index"
+    data-id="{{item.id}}" bindtap="taphref">
     <view class="list-title">{{item.title}}</view>
     <view class="list-image"><image src="{{item.image}}"></image></view>
     <view class="list-description">{{item.desc}}</view>

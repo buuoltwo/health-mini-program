@@ -14,7 +14,15 @@ Page({
 
     list: []
   },
-
+    /**
+   * 页面组件的原型方法
+   */
+  taphref(e){
+    let data = e.currentTarget.dataset
+    wx.navigateTo({
+      url: '/pages/indexDetail/indexDetail?itemId=' + data.id,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
