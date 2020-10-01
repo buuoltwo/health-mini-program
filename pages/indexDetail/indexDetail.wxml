@@ -1,9 +1,8 @@
 <!--pages/indexDetail/indexDetail.wxml-->
 <!-- <text>pages/indexDetail/indexDetail.wxml</text> -->
-<div id="indexDetail">
+<view id="indexDetail">
   <view class="title">{{indexDetails.title}}</view>
   <image src="{{indexDetails.image}}"></image>
-  <text class="desc">{{indexDetails.desc}}</text>
-  <view class="detail">{{indexDetails.detail}}</view>
-</div>
-
+  <view class="desc">{{indexDetails.desc}}</view>
+  <view class="detail">{{indexDetails.detail}}<view class="text" wx:if="{{indexDetails}}">--我是有底线的--</view></view>
+</view>

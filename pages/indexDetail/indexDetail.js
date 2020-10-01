@@ -14,6 +14,9 @@ Page({
   onLoad: function (options) {
     // console.log(options)
     wx.showNavigationBarLoading()
+    wx.showLoading({
+      title: '拼命加载中..',
+    })
     wx.request({
       url: 'http://iwenwiki.com:3002/api/indexlist/detail?id=' + options.itemId,
       success: res => {
@@ -25,6 +28,7 @@ Page({
         wx.setNavigationBarTitle({
           title: res.data[0].title
         })
+        wx.hideLoading()
       },
       complete: () => {
         wx.hideNavigationBarLoading()
