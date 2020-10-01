@@ -29,12 +29,22 @@ Page({
         })
       }
     })
+    wx.showLoading({
+      title: '列表加载中...',
+    })
     wx.request({
       url: 'http://iwenwiki.com:3002/api/indexlist',
       success: res => {
         console.log(res.data.data)
         this.setData({
           list: res.data.data
+        })
+      },
+      complete: () => {
+        wx.hideLoading()
+        wx.showToast({
+          title: '数据加载完毕',
+          icon: 'success'
         })
       }
     })
@@ -77,14 +87,16 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    wx.showToast({
+      title: '数据加载完毕',
+      icon: 'success'
+    })
   },
 
   /**
