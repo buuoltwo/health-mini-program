@@ -1,2 +1,13 @@
 <!--pages/food/food.wxml-->
-<text>pages/food/food.wxml</text>
+<!-- <text>pages/food/food.wxml</text> -->
+<view id="food">
+  <text>pages/food/food.wxml</text>
+  <import src="/templates/foodlist/foodlist.wxml"></import>
+
+  <!-- <template is="foodlist" data="{{...items}}"/>
+  <template is="foodlist" data="{{...items}}"/>
+  <template is="foodlist" data="{{...items}}"/> -->
+  <block wx:for="{{foodArray}}" wx:key="index">
+    <template is="foodlist" data="{{item}}"/>
+  </block>
+</view>

@@ -1,1 +1,2 @@
 /* pages/food/food.wxss */
+@import '/templates/foodlist/foodlist.wxss'
