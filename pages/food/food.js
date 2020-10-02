@@ -32,7 +32,7 @@ Page({
         page: 1
       },
        success: res => {
-         console.log(res)
+        //  console.log(res)
          if(res.data.status === 200) {
           const foodArray = res.data.data.result
           this.setData({

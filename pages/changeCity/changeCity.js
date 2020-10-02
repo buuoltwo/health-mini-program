@@ -5,21 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    current:'北京',
+    chapters:[
+      '北京',
+      '上海',
+      '广州',
+      '深圳',
+      '厦门',
+      '杭州',
+      '青岛',
+      '重庆',
+      '成都',
+      '天津',
+      '大理',
+      '香港'
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.createSelectorQuery().selectAll(".item")[0].node.classList.add("select")
   },
 
   /**

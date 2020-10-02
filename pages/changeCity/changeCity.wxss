@@ -1,1 +1,34 @@
 /* pages/changeCity/changeCity.wxss */
+#changeCity {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section {
+  padding-bottom: 40rpx;
+  margin-bottom: 40rpx;
+  border-bottom: 1rpx solid lightgray;
+}
+.section:last-child {
+  border-bottom: none;
+}
+.header {
+  font-weight: 700;
+  text-align: left;
+}
+
+text {
+  display: inline-block;
+  padding: 30rpx;
+  padding-left:0;
+}
+text.select {
+  border: 1px solid lightblue;
+}
+
+.section button.switch {
+  background-color: lightblue;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0;
+}

@@ -1,2 +1,18 @@
 <!--pages/changeCity/changeCity.wxml-->
-<text>pages/changeCity/changeCity.wxml</text>
+<!-- <text>pages/changeCity/changeCity.wxml</text> -->
+<view id="changeCity">
+  <view class="section">
+    <view class="header">当前城市</view>
+    <text>{{current}}</text>
+  </view>
+  <view class="section">
+    <view class="header">可供选择</view>
+    <view class="list">
+      <text class="item" wx:for="{{chapters}}" wx:key="index"
+      bindtap="selecting">{{item}}</text>
+    </view>
+  </view>
+  <view class="section">
+    <button class="switch">切换</button>
+  </view>
+</view>

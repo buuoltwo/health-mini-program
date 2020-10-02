@@ -43,7 +43,7 @@ Page({
     wx.request({
       url: 'http://iwenwiki.com:3002/api/indexlist',
       success: res => {
-        console.log(res.data.data)
+        // console.log(res.data.data)
         this.setData({
           list: res.data.data
         })

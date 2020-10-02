@@ -78,8 +78,8 @@
         },
         {
           "id": 1,
-          "name": "pages/food/food",
-          "pathName": "pages/food/food",
+          "name": "pages/changeCity/changeCity",
+          "pathName": "pages/changeCity/changeCity",
           "query": "",
           "scene": null
         }
