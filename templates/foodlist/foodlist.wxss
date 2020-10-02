@@ -1,0 +1,60 @@
+/* templates/foodlist/foodlist.wxss */
+.list {
+  display: grid;
+  grid: auto auto auto / 210rpx 1fr;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.096);
+
+  height: 220rpx;
+  font-size: 12px;
+  padding: 0 20rpx;
+}
+
+.list .list-title {
+  grid-area: 1/1/2/3;
+  font-weight: 800;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list .list-image {
+  grid-area: 2/1/4/2;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list image {
+  width: 210rpx;
+  height: 140rpx;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0;
+}
+
+.list .list-description {
+  grid-area: 2/2/3/3;
+  padding-left: 20rpx;
+
+  height: 120rpx;
+  line-height: 40rpx;
+
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+}
+
+.list .list-reading {
+  grid-area: 3/2/4/3;
+  margin-left: auto;
+}
+
+.list text {
+  margin-right: 10rpx;
+  color: orangered;
+}

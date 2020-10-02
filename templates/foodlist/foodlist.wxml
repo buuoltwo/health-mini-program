@@ -1,0 +1,11 @@
+<!--templates/foodlist/foodlist.wxml-->
+<!-- <text>templates/foodlist/foodlist.wxml</text> -->
+<template name="foodlist">
+  <view class="list" wx:for="{{list}}" wx:key="index"
+    data-id="{{item.id}}" bindtap="taphref">
+    <view class="list-title">{{item.title}}</view>
+    <view class="list-image"><image src="{{item.image}}"></image></view>
+    <view class="list-description">{{item.desc}}</view>
+    <view class="list-reading"><text>{{item.readNum}}</text>阅读</view>
+  </view>
+</template>
