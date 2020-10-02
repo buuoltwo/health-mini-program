@@ -5,6 +5,9 @@
     <view class="list-title">{{item.name}}</view>
     <view class="list-image"><image src="{{item.pic}}"></image></view>
     <view class="list-description">{{item.description}}</view>
-    <view class="list-reading"><text>{{item.price}}</text>阅读</view>
+    <view class="list-reading">
+      <text class="text-1">￥{{item.price}}</text>
+      <text class="text-2">{{item.buynum}}人付款</text>
+    </view>
   </view>
 </template>
