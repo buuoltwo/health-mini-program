@@ -2,7 +2,10 @@
 <!-- <text>pages/indexDetail/indexDetail.wxml</text> -->
 <view id="indexDetail">
   <view class="title">{{indexDetails.title}}</view>
-  <image src="{{indexDetails.image}}"></image>
+  <view class="image">
+    <image src="{{indexDetails.image}}"></image>
+  </view>
   <view class="desc">{{indexDetails.desc}}</view>
-  <view class="detail">{{indexDetails.detail}}<view class="text" wx:if="{{indexDetails}}">--我是有底线的--</view></view>
+  <view class="detail">{{indexDetails.detail}}<view class="text" wx:if="{{indexDetails}}">--我是有底线的--</view>
+  </view>
 </view>

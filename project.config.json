@@ -70,10 +70,10 @@
       "current": -1,
       "list": [
         {
-          "id": -1,
+          "id": 0,
           "name": "pages/indexDetail/indexDetail",
           "pathName": "pages/indexDetail/indexDetail",
-          "query": "itemId=1002",
+          "query": "itemId=1004",
           "scene": null
         }
       ]
