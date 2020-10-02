@@ -1,2 +1,21 @@
 /* pages/food/food.wxss */
-@import '/templates/foodlist/foodlist.wxss'
+@import '/templates/foodlist/foodlist.wxss';
+
+#food {
+  padding-bottom: 80px;
+}
+.search {
+  display: flex;
+  margin-top: 20rpx;
+  padding: 10rpx;
+}
+.search :nth-child(1) {
+  flex: initial;
+  padding:  0 40rpx 0 0;
+}
+.search :nth-child(2) {
+  flex: auto;
+}
+.search input {
+  border: 1px solid lightgray;
+}

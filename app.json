@@ -3,7 +3,9 @@
     "pages/home/home",
     "pages/food/food",
     "pages/about/about",
-    "pages/indexDetail/indexDetail"
+    "pages/indexDetail/indexDetail",
+    "pages/search/search",
+    "pages/changeCity/changeCity"
   ],
   "window": {
     "backgroundTextStyle": "light",

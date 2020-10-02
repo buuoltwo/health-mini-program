@@ -6,6 +6,7 @@ Page({
    */
   data: {
     foodArray: [],
+    location:"北京",
     items: {
       foodlist: {
         title:'xx',
