@@ -12,7 +12,14 @@
   <!-- <template is="foodlist" data="{{...items}}"/>
   <template is="foodlist" data="{{...items}}"/>
   <template is="foodlist" data="{{...items}}"/> -->
-  <block wx:for="{{foodArray}}" wx:key="index">
+
+  <!-- //1. -->
+  <!-- <block wx:for="{{foodArray}}" wx:key="index">
     <template is="foodlist" data="{{item}}"/>
-  </block>
+  </block> -->
+
+  <!-- //2. -->
+  <template is="foodlist" data="{{item}}"
+    wx:for="{{foodArray}}" wx:key="index"/>
+
 </view>
