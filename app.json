@@ -33,6 +33,10 @@
       }
     ]
   },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
   "usingComponents": {},
   "style": "v2",
   "sitemapLocation": "sitemap.json"

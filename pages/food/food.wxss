@@ -19,3 +19,19 @@
 .search input {
   border: 1px solid lightgray;
 }
+
+.subjects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 4px rgb(241, 49, 123);
+  margin-top: 15rpx;
+}
+.item {
+  width: 25%;
+  margin: 15rpx 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  text-align: center;
+}
