@@ -65,6 +65,10 @@ Page({
         selected: 1
       })
     }
+    wx.pageScrollTo({
+      scrollTop: 0,
+      duration: 300
+    })
   },
 
   /**

@@ -75,6 +75,9 @@ Page({
         selected: 0
       })
     }
+    wx.pageScrollTo({
+      scrollTop: 0
+    })
   },
 
   /**
