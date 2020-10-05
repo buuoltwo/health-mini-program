@@ -67,6 +67,12 @@ Page({
     this.setData({
       current: e.currentTarget.dataset.text
     })
+    app.city = e.currentTarget.dataset.text
+  },
+  switchtab(){
+    wx.switchTab({
+      url: '/pages/food/food',
+    })
   },
 
   /**

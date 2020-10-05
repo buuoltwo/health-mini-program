@@ -1,4 +1,5 @@
 // pages/food/food.js
+let app = getApp()
 Page({
 
   /**
@@ -68,6 +69,31 @@ Page({
     wx.pageScrollTo({
       scrollTop: 0,
       duration: 300
+    })
+    wx.showLoading()
+    wx.showNavigationBarLoading()
+    this.setData({
+      location: app.city
+    })
+    wx.request({
+      url: 'http://iwenwiki.com:3002/api/foods/list',
+      data: {
+        city: app.city,
+        page: 1
+      },
+       success: res => {
+         console.log(res)
+         if(res.data.status === 200) {
+          const foodArray = res.data.data.result
+          this.setData({
+            foodArray
+          })
+         }
+       },
+        complete: () => {
+          wx.hideLoading()
+          wx.hideNavigationBarLoading()
+        }
     })
   },
 

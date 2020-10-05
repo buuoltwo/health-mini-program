@@ -14,6 +14,6 @@
     </view>
   </view>
   <view class="section">
-    <button class="switch"><mp-icon icon="location" color="#348CD1" size="{{25}}"></mp-icon>切换</button>
+    <button class="switch" bindtap="switchtab"><mp-icon icon="location" color="#348CD1" size="{{25}}"></mp-icon>切换</button>
   </view>
 </view>
