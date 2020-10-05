@@ -1,4 +1,5 @@
 // pages/changeCity/changeCity.js
+let app = getApp()
 Page({
 
   /**
@@ -23,6 +24,10 @@ Page({
     position:null,
   },
   location() {
+    let self = this
+    wx.showLoading({
+      title: '正在为您定位..',
+    })
     wx.getLocation({
       success: (res) => {
         console.log(res)
@@ -36,12 +41,32 @@ Page({
           },
           success: result => {
             console.log(result)
-            result.data.result.address
-            result.data.result.formatted_addresses
+            // result.data.result.address
+            // result.data.result.formatted_addresses
+            let addr = result.data.result.address
+            // console.log(addr)
+            app.city = addr.slice(3,5)
+            self.setData({
+              current: app.city
+            })
+            // console.log(app)
+          },
+          fail: () => {
+            console.log("error..")
+          },
+          complete: () => {
+            wx.hideLoading()
           }
         })
       }
      })
+  },
+  selecting(e){
+    console.log(e)
+    // e.currentTarget.dataset.text
+    this.setData({
+      current: e.currentTarget.dataset.text
+    })
   },
 
   /**

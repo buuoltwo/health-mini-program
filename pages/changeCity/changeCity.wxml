@@ -7,10 +7,10 @@
     <button class="position" size="mini" hover-class="none" bindtap="location">定位</button>
   </view>
   <view class="section">
-    <view class="header">可供选择</view>
+    <view class="header">热门城市</view>
     <view class="list">
       <text class="item" wx:for="{{chapters}}" wx:key="index"
-      bindtap="selecting">{{item}}</text>
+      bindtap="selecting" data-text="{{item}}">{{item}}</text>
     </view>
   </view>
   <view class="section">
