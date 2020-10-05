@@ -19,7 +19,19 @@ Page({
       '天津',
       '大理',
       '香港'
-    ]
+    ],
+    position:null,
+  },
+  location() {
+    wx.getLocation({
+      success: (res) => {
+        console.log(res)
+        this.setData({
+          position: res
+        })
+
+      }
+     })
   },
 
   /**

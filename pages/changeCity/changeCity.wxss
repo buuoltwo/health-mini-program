@@ -12,10 +12,18 @@
 }
 .section:last-child {
   border-bottom: none;
+  display: flex;
+  justify-content: center;
 }
 .header {
   font-weight: 700;
   text-align: left;
+}
+button.position {
+  display: inline;
+  padding: 15rpx;
+  text-decoration: underline;
+  color: blueviolet;
 }
 
 text {
@@ -23,12 +31,14 @@ text {
   padding: 30rpx;
   padding-left:0;
 }
-text.select {
-  border: 1px solid lightblue;
-}
 
 .section button.switch {
-  background-color: lightblue;
-  border-radius: 4px;
-  box-shadow: 0 0 2px 0;
+  width: 80%;
+  background-color:  burlywood;
+  border: none;
+  border-radius: 80px;
+  font-weight: 300;
+}
+button.switch mp-icon {
+  margin-right: 5px;
 }
