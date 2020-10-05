@@ -26,10 +26,20 @@ Page({
     wx.getLocation({
       success: (res) => {
         console.log(res)
-        this.setData({
-          position: res
+        let latitude = res.latitude
+        let longitude = res.longitude
+        wx.request({
+          url: 'http://iwenwiki.com:3002/api/lbs/location',
+          data: {
+            latitude,
+            longitude
+          },
+          success: result => {
+            console.log(result)
+            result.data.result.address
+            result.data.result.formatted_addresses
+          }
         })
-
       }
      })
   },
